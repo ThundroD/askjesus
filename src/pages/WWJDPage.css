@@ -1,0 +1,27 @@
+/* WWJDPage.css */
+
+.wwjd-container {
+    padding: 20px;
+}
+
+.conversation-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.question, .answer {
+    margin-bottom: 5px;
+}
+
+.question strong, .answer strong {
+    color: #007bff;
+}
+
+.loading-text, .error-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}

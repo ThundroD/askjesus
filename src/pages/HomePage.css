@@ -1,0 +1,119 @@
+.home-page {
+    text-align: center;
+    margin: 20px;
+}
+
+.heading {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Keep this to align the top edges of the items */
+}
+
+.jesus-image img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto;
+    max-width: 300px; /* Adjust max-width as needed to control the size */
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.speech-bubble.no-tail::after {
+    display: none;
+}
+
+.jesus-image-container {
+    order: 2; /* Keeps the image below the speech bubble */
+    width: 100%; /* Adjust as needed */
+}
+
+
+.speech-bubble-container {
+    order: 1; /* This makes the speech bubble appear on top when it has content */
+}
+
+
+.speech-bubble {
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    position: relative;
+    background-color: white;
+    /* other styles */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -30%; /* Position the tail at the bottom of the speech bubble */
+    left: 5%; /* Start the tail from the center of the bubble */
+    margin-left: -10px; /* Center the tail horizontally */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 25px solid #000; /* The tail will have the same border as the speech bubble */
+    transform: translateX(-70%) rotate(220deg); /* Center and rotate the tail to point upwards */
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+.input-prompt {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: #aaa;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .home-page {
+        padding: 10px;
+    }
+}
+
