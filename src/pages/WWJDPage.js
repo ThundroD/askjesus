@@ -11,6 +11,7 @@ const WWJDPage = () => {
             setIsLoading(true);
             setError(null);
             try {
+                // apiUrl will be your Heroku backend URL in production
                 const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
                 const response = await fetch(`${apiUrl}/api/conversation`);
                 if (!response.ok) {
@@ -47,4 +48,5 @@ const WWJDPage = () => {
 };
 
 export default WWJDPage;
+
 

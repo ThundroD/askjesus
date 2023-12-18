@@ -31,6 +31,7 @@ const HomePage = () => {
     setError(null);
 
     try {
+      // Use the environment variable REACT_APP_API_URL
       const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/chat`, {
         method: 'POST',
