@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './HomePage.css';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const HomePage = () => {
   const [inputValue, setInputValue] = useState('');
@@ -83,11 +84,18 @@ const HomePage = () => {
           </button>
         </form>
       </div>
+      {/* Add the links to Terms and Conditions and Privacy Policy */}
+      <div className="footer-links" style={{ marginTop: '100px' }}>
+        <Link to="/terms-and-conditions">Terms & Conditions</Link> |{' '}
+        <Link to="/privacy-policy">Privacy Policy</Link> {/* Use Link to navigate to pages */}
+      </div>
     </div>
   );
 };
 
 export default HomePage;
+
+
 
 
 

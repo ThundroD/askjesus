@@ -24,9 +24,6 @@ const NavigationBar = () => {
                     <Nav.Link as={NavLink} to="/wwjd" style={{ fontWeight: 'bold', color: 'white' }}>
                         What Would Jesus Do
                     </Nav.Link>
-                    <Nav.Link as={NavLink} to="/blog" style={{ fontWeight: 'bold', color: 'white' }}>
-                        Blog
-                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
