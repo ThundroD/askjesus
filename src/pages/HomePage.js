@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './HomePage.css';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
   const [inputValue, setInputValue] = useState('');
@@ -58,6 +59,22 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      <Helmet>
+        <title>What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom</title>
+        <meta name="description" content="Discover personalized, biblical wisdom with the 'What Would Jesus Do?' app. Ask any question and receive insights drawn directly from the teachings of Jesus and Christian principles. Begin your spiritual journey today and find guidance for life's challenges." />
+        <meta name="keywords" content="Jesus, Christian advice, Spiritual guidance, Biblical wisdom, Faith questions, Christian living, Scripture insights, Ask Jesus, Christian faith, Religious guidance" />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom" />
+        <meta property="og:description" content="Seeking answers? Ask any question and receive guidance inspired by the teachings of Jesus. Explore biblical wisdom and strengthen your faith journey." />
+        <meta property="og:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" /> {/* Replace with the URL to an image representing your app */}
+        <meta property="og:url" content="https://lustrous-bunny-ec58cf.netlify.app/" /> {/* Replace with your app's URL */}
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom" />
+        <meta name="twitter:description" content="Dive into the teachings of Jesus and find answers and guidance for your life's questions. Explore now." />
+        <meta name="twitter:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" /> {/* Replace with the URL to an image representing your app */}
+      </Helmet>
       <h1 className="heading">What would Jesus Do?</h1>
       <div className="content">
         <div className="jesus-image">
