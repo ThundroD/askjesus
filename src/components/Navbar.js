@@ -14,7 +14,7 @@ const NavigationBar = () => {
                         className="d-inline-block align-middle"
                         alt="Logo"
                     />
-                    <span className="brand-text align-middle"><strong>Jesus Ask Me Anything</strong></span>
+                    <span className="brand-text align-middle"><strong>Ask Jesus Anything</strong></span>
                 </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
