@@ -4,7 +4,7 @@ const TermsAndConditionsPage = () => {
   return (
     <div>
       <h1>Terms and Conditions</h1>
-      <p>Last updated: December 21, 2023</p>
+      <p>Last updated: December 25, 2023</p>
 
       <h2>1. Acceptance of Terms</h2>
       <p>

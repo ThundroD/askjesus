@@ -5,7 +5,7 @@ function PrivacyPolicyPage() {
     <div className="privacy-policy">
       <h1>Privacy Policy</h1>
 
-      <p>Last Updated: December 21, 2023</p>
+      <p>Last Updated: December 25, 2023</p>
 
       <p>
         This Privacy Policy explains how Jesusama.com ("we," "us," or "our") collects, uses, shares, and protects your personal information as required by the General Data Protection Regulation (GDPR).
