@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/ads.txt"
+  to = "https://srv.adstxtmanager.com/62388/askmeanythingjesus.com"
+  status = 301
+  force = true  # Ensure that the redirect is always performed, even if the original file exists.
