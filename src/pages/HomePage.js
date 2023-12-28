@@ -56,6 +56,18 @@ const HomePage = () => {
       setIsSubmitting(false);
     }
   };
+  
+    useEffect(() => {
+      // Script integration
+      window.ezstandalone = window.ezstandalone || {};
+      window.ezstandalone.cmd = window.ezstandalone.cmd || [];
+      window.ezstandalone.cmd.push(function() {
+        window.ezstandalone.define(188);
+        window.ezstandalone.enable();
+        window.ezstandalone.display();
+      });
+      // The empty dependency array ensures this effect runs once on mount
+    }, []);
 
   return (
     <div className="home-page">
@@ -74,6 +86,7 @@ const HomePage = () => {
         <meta name="twitter:title" content="What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom" />
         <meta name="twitter:description" content="Dive into the teachings of Jesus and find answers and guidance for your life's questions. Explore now." />
         <meta name="twitter:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" /> {/* Replace with the URL to an image representing your app */}
+        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
       </Helmet>
       <h1 className="heading">What would Jesus Do?</h1>
       <div className="content">
