@@ -56,18 +56,6 @@ const HomePage = () => {
       setIsSubmitting(false);
     }
   };
-  
-    useEffect(() => {
-      // Script integration
-      window.ezstandalone = window.ezstandalone || {};
-      window.ezstandalone.cmd = window.ezstandalone.cmd || [];
-      window.ezstandalone.cmd.push(function() {
-        window.ezstandalone.define(188);
-        window.ezstandalone.enable();
-        window.ezstandalone.display();
-      });
-      // The empty dependency array ensures this effect runs once on mount
-    }, []);
 
   return (
     <div className="home-page">

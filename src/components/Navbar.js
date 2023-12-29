@@ -22,7 +22,10 @@ const NavigationBar = () => {
                 <Nav className="ms-auto">
                     {/* Apply custom styles to Nav.Link */}
                     <Nav.Link as={NavLink} to="/wwjd" style={{ fontWeight: 'bold', color: 'white' }}>
-                        What Would Jesus Do
+                        Conversations With Jesus
+                    </Nav.Link>
+                    <Nav.Link as={NavLink} to="/blog" style={{ fontWeight: 'bold', color: 'white' }}>
+                        Jesus' Blog
                     </Nav.Link>
                 </Nav>
             </Navbar.Collapse>

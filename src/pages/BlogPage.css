@@ -1,0 +1,78 @@
+/* BlogPage.css */
+
+/* This will apply to the entire blog page container */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    width: 100%; /* Ensures that container takes full width */
+  }
+  
+  /* This targets the blog titles */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center; /* Center the title text */
+  }
+  
+  /* Styles for the list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Full width to center in the parent */
+    max-width: 600px; /* Maximum width of the list */
+    margin: auto; /* Center the list in the container */
+  }
+  
+  /* Styles for each list item */
+  li {
+    margin: 10px 0;
+    text-align: center; /* Center the list items */
+  }
+  
+  /* Styles for the links */
+  a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #0077cc;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover, a:focus {
+    color: #004499;
+  }
+  
+  /* Footer or privacy link styles */
+  .footer-link {
+    font-size: 1rem;
+    text-align: center; /* Center the footer link */
+    width: 100%; /* Full width to center in the parent */
+    padding-top: 20px; /* Add space above the footer link */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Smaller size for mobile */
+    }
+  
+    a {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .footer-link {
+      position: static; /* Disable absolute positioning on mobile */
+      transform: none; /* Remove transform */
+      margin-top: 20px; /* Add margin-top to push it from the last list item */
+    }
+  
+    /* Reduce padding for smaller screens */
+    .blog-container {
+      padding: 20px;
+    }
+  }
+  

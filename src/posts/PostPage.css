@@ -1,0 +1,60 @@
+/* Scoped styles for the article content */
+article {
+    max-width: 800px; /* Set a max-width for better readability */
+    margin: 40px auto; /* Center the article and add vertical spacing */
+    padding: 20px; /* Add padding inside the article */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  /* Title and headings within the article */
+  article h1, article h2 {
+    color: #555; /* Dark grey color for headings */
+    text-align: center; /* Center the titles */
+  }
+  
+  article h1 {
+    font-size: 2.5rem; /* Larger font size for main title */
+    margin-bottom: 0.5em; /* Space after title */
+  }
+  
+  article h2 {
+    font-size: 2rem; /* Font size for subtitles */
+    margin-top: 2em; /* Space before subtitle */
+    margin-bottom: 1em; /* Space after subtitle */
+  }
+  
+  /* Paragraphs within the article */
+  article p {
+    margin-bottom: 1em; /* Space after paragraphs */
+  }
+  
+  /* Responsive styles for article */
+  @media (max-width: 768px) {
+    article {
+      padding: 20px 15px; /* Smaller padding on mobile */
+    }
+  
+    article h1 {
+      font-size: 2rem; /* Smaller font size for main title on mobile */
+    }
+  
+    article h2 {
+      font-size: 1.5rem; /* Smaller font size for subtitles on mobile */
+    }
+  
+    article p {
+      font-size: 0.9rem; /* Smaller font size for text on mobile */
+    }
+  }
+  
+  /* Styles for larger screens with side rail ads, scoped to article */
+  @media (min-width: 1025px) {
+    article {
+      padding: 20px 100px; /* Add more padding to the sides for ads */
+    }
+  }
+  
+  
+  
+  
+  
