@@ -54,7 +54,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/Jesus'-Tips-for-2024" element={<Article />} />
         <Route path="/blog/Digital-Detox" element={<DigitalDetoxArticle />} />
-        <Route path="/blog/Sermon-On-The Mount" element={<SermonOnTheDigitalMount />} />
+        <Route path="/blog/Sermon-On-The-Mount" element={<SermonOnTheDigitalMount />} />
         <Route path="/blog/Miracle-Of-Mindfullness" element={<MiracleOfMindfulness />} />
         <Route path="/blog/Turn-Water-To-Wine-Work-Life-Balance" element={<TurningWaterIntoWine />} />
         <Route path="/blog/Jesus-Peace-With-Trolls" element={<BlessedPeacemakers />} />
