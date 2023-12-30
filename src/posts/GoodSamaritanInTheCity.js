@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const GoodSamaritanInTheCity = () => {
+
+  const imagePath = '/post_pics/Samaritan.png';
+
   return (
     <>
       <Helmet>
         <title>The Good Samaritan in the City: Showing Kindness in Urban Chaos</title>
         <meta name="description" content="Discover how the parable of the Good Samaritan inspires acts of kindness and compassion in the hustle and bustle of city life." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Good Samaritan in the City" />
+        <meta property="og:description" content="Discover how the parable of the Good Samaritan inspires acts of kindness and compassion in the hustle and bustle of city life." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Good Samaritan in the City" />
+        <meta property="twitter:description" content="Discover how the parable of the Good Samaritan inspires acts of kindness and compassion in the hustle and bustle of city life." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Good Samaritan in the City: Showing Kindness in Urban Chaos</h1>
+        <img src={imagePath} alt="The Good Samaritan in the City" style={{ maxWidth: '100%' }} />
         <p>In the bustling streets of modern cities, where the pace of life quickens and personal connections often blur, the parable of the Good Samaritan (Luke 10:25-37) remains a powerful call to action. It's a reminder that amid urban chaos, the opportunity to be a neighbor to those in need is not just present but profoundly necessary.</p>
 
         <p>Let us journey together through the concrete and noise, finding ways to cultivate compassion, understanding, and active kindness, just as the Samaritan did on the road to Jericho.</p>

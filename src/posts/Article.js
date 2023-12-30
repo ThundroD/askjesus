@@ -2,6 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const Article = () => {
+
+  const imagePath = '/post_pics/2024.png';
+
   return (
     <>
       <Helmet>
@@ -9,10 +12,19 @@ const Article = () => {
         <meta name="description" content="Kick off 2024 on the right foot with these top ten tips inspired by the teachings of Jesus." />
         <meta name="author" content="Jesus" />
         <meta name="date" content="2023-12-31" />
+        <meta property="og:title" content="Jesus' Top Tips for Starting 2024 Right" />
+        <meta property="og:description" content="Kick off 2024 on the right foot with these top ten tips inspired by the teachings of Jesus." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Jesus' Top Tips for Starting 2024 Right" />
+        <meta property="twitter:description" content="Kick off 2024 on the right foot with these top ten tips inspired by the teachings of Jesus." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Jesus' Top Tips for Starting 2024 Right</h1>
+        <img src={imagePath} alt="Jesus' Tips for 2024" style={{ maxWidth: '100%' }} />
         <p>As we stand on the brink of a new year, it's a time for reflection, renewal, 
         and setting our sights on the paths we wish to walk. Here are my top ten tips 
         for starting 2024 right, drawn from teachings that have stood the test of time.</p>

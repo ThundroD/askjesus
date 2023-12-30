@@ -4,16 +4,26 @@ import { Helmet } from 'react-helmet';
 import './PostPage.css';
 
 const ProdigalSonReturns = () => {
+  const imagePath = '/post_pics/Son.png';
   return (
     <>
       <Helmet>
         <title>The Prodigal Son Returns: Dealing with Family Estrangement and Reconciliation</title>
         <meta name="description" content="Explore the journey of healing and reconciliation within families, drawing wisdom from the parable of the Prodigal Son." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Prodigal Son Returns: Dealing with Family Estrangement and Reconciliation" />
+        <meta property="og:description" content="Explore the journey of healing and reconciliation within families, drawing wisdom from the parable of the Prodigal Son" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Prodigal Son Returns: Dealing with Family Estrangement and Reconciliation" />
+        <meta property="twitter:description" content="Explore the journey of healing and reconciliation within families, drawing wisdom from the parable of the Prodigal Son." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Prodigal Son Returns: Dealing with Family Estrangement and Reconciliation</h1>
+        <img src={imagePath} alt="Navigating Social Media with Grace" style={{ maxWidth: '100%' }} />
         <p>The parable of the Prodigal Son (Luke 15:11-32) is a timeless story of forgiveness, love, and return. It resonates deeply with anyone who has experienced the pain of family estrangement and the longing for reconciliation. As we delve into this ancient narrative, let's uncover how its lessons can guide us in healing and reuniting with our loved ones today.</p>
 
         <p>In a world where families can be pulled apart by various forces – be it misunderstanding, distance, or hurt – the path back to each other can be fraught with challenges yet also ripe with the potential for profound healing.</p>

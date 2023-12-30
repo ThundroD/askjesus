@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const FeedingTheFiveThousand = () => {
+  const imagePath = '/post_pics/Feeding.png';
   return (
     <>
       <Helmet>
         <title>Feeding the Five Thousand: Addressing Modern Hunger with Ancient Compassion</title>
         <meta name="description" content="Explore how the biblical miracle of feeding the five thousand inspires modern solutions to hunger and poverty." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Feeding the Five Thousand: Addressing Modern Hunger with Ancient Compassion" />
+        <meta property="og:description" content="Explore how the biblical miracle of feeding the five thousand inspires modern solutions to hunger and poverty." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Feeding the Five Thousand: Addressing Modern Hunger with Ancient Compassion" />
+        <meta property="twitter:description" content="Explore how the biblical miracle of feeding the five thousand inspires modern solutions to hunger and poverty." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Feeding the Five Thousand: Addressing Modern Hunger with Ancient Compassion</h1>
+        <img src={imagePath} alt="Feeding the Five Thousand" style={{ maxWidth: '100%' }} />
         <p>My friends, when I fed the five thousand, it was not just about providing bread and fish; it was a testament to the power of compassion and sharing. Today, as you face the vast hunger and need in the world, remember that the same principles that multiplied loaves and fishes can also amplify your efforts to nourish the hungry and heal the broken.</p>
 
         <p>In a world brimming with resources yet plagued by inequality, let's explore how ancient compassion can guide modern actions and how, together, we can continue the work of feeding not just the body, but also the soul.</p>

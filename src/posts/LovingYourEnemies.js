@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const LovingYourEnemies = () => {
+
+  const imagePath = '/post_pics/Enemies.png';
+
   return (
     <>
       <Helmet>
         <title>Loving Your Enemies: Diffusing Hatred in a Polarized World</title>
         <meta name="description" content="Explore the transformative power of love and how it can bridge divides, heal wounds, and diffuse hatred in today's world." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Loving Your Enemies: Diffusing Hatred in a Polarized World" />
+        <meta property="og:description" content="Explore the transformative power of love and how it can bridge divides, heal wounds, and diffuse hatred in today's world" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Loving Your Enemies: Diffusing Hatred in a Polarized World" />
+        <meta property="twitter:description" content="Explore the transformative power of love and how it can bridge divides, heal wounds, and diffuse hatred in today's world." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Loving Your Enemies: Diffusing Hatred in a Polarized World</h1>
+        <img src={imagePath} alt="Loving Your Enemies: Diffusing Hatred in a Polarized World" style={{ maxWidth: '100%' }} />
         <p>"But I say to you, Love your enemies and pray for those who persecute you" (Matthew 5:44). In a world where division and animosity seem more prevalent than ever, these words challenge us to rise above our instincts of anger and retaliation. Let's explore how embracing this radical form of love can lead not only to personal transformation but also to healing societal rifts.</p>
 
         <p>As we navigate the complexities of loving those we disagree with or even consider adversaries, consider how these principles can lead to a more compassionate, understanding, and unified community.</p>

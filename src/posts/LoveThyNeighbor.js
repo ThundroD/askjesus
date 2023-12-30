@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const LoveThyNeighbor = () => {
+
+  const imagePath = '/post_pics/Neighbor.png';
+
   return (
     <>
       <Helmet>
         <title>Love Thy Neighbor: Building Community in a Divided Society</title>
         <meta name="description" content="Explore how the biblical command to love your neighbor can guide us in bridging divides and strengthening community bonds in today's society." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Love Thy Neighbor: Building Community in a Divided Society" />
+        <meta property="og:description" content="Explore how the biblical command to love your neighbor can guide us in bridging divides and strengthening community bonds in today's society." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Love Thy Neighbor: Building Community in a Divided Society" />
+        <meta property="twitter:description" content="Explore how the biblical command to love your neighbor can guide us in bridging divides and strengthening community bonds in today's society." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Love Thy Neighbor: Building Community in a Divided Society</h1>
+        <img src={imagePath} alt="Love Thy Neighbor" style={{ maxWidth: '100%' }} />
         <p>"Love your neighbor as yourself" (Mark 12:31). This simple commandment is profoundly relevant in today's world, where divisions run deep, and understanding often feels out of reach. As we seek to navigate and heal the fractures within our societies, let's revisit this ancient wisdom and explore how it can light our way toward a more united and compassionate community.</p>
 
         <p>Let's embark on a journey to understand the depth of this commandment, its implications for our contemporary world, and the practical steps we can take to embody this principle in our daily lives and communities.</p>

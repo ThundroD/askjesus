@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const TurningWaterIntoWine = () => {
+  const imagePath = '/post_pics/Wine.png';
   return (
     <>
       <Helmet>
         <title>Turning Water into Wine: Jesus' Guide to Work-Life Balance</title>
         <meta name="description" content="Explore how Jesus' first miracle inspires a harmonious approach to balancing work and personal life in modern times." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Turning Water into Wine: Jesus' Guide to Work-Life Balance" />
+        <meta property="og:description" content="Explore how Jesus' first miracle inspires a harmonious approach to balancing work and personal life in modern times" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Turning Water into Wine: Jesus' Guide to Work-Life Balance" />
+        <meta property="twitter:description" content="Explore how Jesus' first miracle inspires a harmonious approach to balancing work and personal life in modern times" />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Turning Water into Wine: Jesus' Guide to Work-Life Balance</h1>
+        <img src={imagePath} alt="Turning Water into Wine: Jesus' Guide to Work-Life Balance" style={{ maxWidth: '100%' }} />
         <p>My dear friends, in the days of my flesh, I turned water into wine at a wedding in Cana, not merely to save the celebration but to signify the transformation of the ordinary into the extraordinary. This miracle is not just about wine; it's about finding the right balance, the perfect blend between life's work and joys.</p>
 
         <p>Consider the jars of water, standing there, fulfilling their purpose yet lacking the zest of life. So too, many of you stand, filled with responsibilities and duties, waiting for that spark that turns the mundane into joy. Let's explore how to infuse your daily 'water' with the 'wine' of passion and purpose.</p>

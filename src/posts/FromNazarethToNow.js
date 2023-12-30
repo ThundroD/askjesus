@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const FromNazarethToNow = () => {
+
+  const imagePath = '/post_pics/Now.png';
+
   return (
     <>
       <Helmet>
         <title>From Nazareth to Now: Embracing Simplicity in a Consumer Culture</title>
         <meta name="description" content="Discover how Jesus' life and teachings inspire a move towards simplicity and away from the excesses of consumer culture." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="From Nazareth to Now: Embracing Simplicity in a Consumer Culture" />
+        <meta property="og:description" content="Discover how Jesus' life and teachings inspire a move towards simplicity and away from the excesses of consumer culture." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="From Nazareth to Now: Embracing Simplicity in a Consumer Culture" />
+        <meta property="twitter:description" content="Discover how Jesus' life and teachings inspire a move towards simplicity and away from the excesses of consumer culture." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>From Nazareth to Now: Embracing Simplicity in a Consumer Culture</h1>
+        <img src={imagePath} alt="From Nazareth to Now: Embracing Simplicity in a Consumer Culture" style={{ maxWidth: '100%' }} />
         <p>In the modest town of Nazareth, I began my earthly journey, far from the trappings of wealth and status. This simplicity was not mere circumstance but a profound message about what truly matters in life. Today, as consumer culture continually urges you to want more, buy more, and be more, let's explore how embracing simplicity can lead to deeper satisfaction and spiritual richness.</p>
 
         <p>As we navigate this topic, consider how a life focused on the essentials — love, kindness, contentment, and faith — can counteract the relentless pressure to consume and offer a path to a more fulfilling existence.</p>

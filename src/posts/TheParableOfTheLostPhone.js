@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const TheParableOfTheLostPhone = () => {
+  const imagePath = '/post_pics/Phone.png';
   return (
     <>
       <Helmet>
         <title>The Parable of the Lost Phone: Reconnecting with What Truly Matters</title>
         <meta name="description" content="Discover the deeper meaning behind losing and finding our way in a world saturated with digital distractions." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Parable of the Lost Phone: Reconnecting with What Truly Matters" />
+        <meta property="og:description" content="Discover the deeper meaning behind losing and finding our way in a world saturated with digital distractions" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Parable of the Lost Phone: Reconnecting with What Truly Matters" />
+        <meta property="twitter:description" content="Discover the deeper meaning behind losing and finding our way in a world saturated with digital distractions" />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Parable of the Lost Phone: Reconnecting with What Truly Matters</h1>
+        <img src={imagePath} alt="The Last Supper: A Call for Sustainable Eating Habits" style={{ maxWidth: '100%' }} />
         <p>My children, let me tell you a modern parable. Imagine one day you lose your phone - that precious device that connects you to so much yet often distances you from the very life around you. In the frantic search that ensues, consider what you're truly seeking. Is it the device itself, or is it the connection, information, and sense of control it provides?</p>
 
         <p>As in the parables of the lost sheep and the lost coin, the story of the lost phone is not just about the object lost, but about the value and meaning it holds, and what happens when that's suddenly gone. It's a moment that invites reflection on what truly matters in your life.</p>

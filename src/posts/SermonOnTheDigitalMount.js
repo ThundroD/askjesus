@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SermonOnTheDigitalMount = () => {
+
+  const imagePath = '/post_pics/The-Sermon.png';
+
   return (
     <>
       <Helmet>
         <title>The Sermon on the Mount Goes Digital: Navigating Social Media with Grace</title>
         <meta name="description" content="Learn how to navigate the complexities of social media with grace and wisdom, inspired by the teachings of Jesus." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Sermon on the Mount Goes Digital: Navigating Social Media with Grace" />
+        <meta property="og:description" content="Learn how to navigate the complexities of social media with grace and wisdom, inspired by the teachings of Jesus." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Sermon on the Mount Goes Digital: Navigating Social Media with Grace" />
+        <meta property="twitter:description" content="Learn how to navigate the complexities of social media with grace and wisdom, inspired by the teachings of Jesus." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Sermon on the Mount Goes Digital: Navigating Social Media with Grace</h1>
+        <img src={imagePath} alt="Navigating Social Media with Grace" style={{ maxWidth: '100%' }} />
         <p>Beloved friends, as we gather upon this digital mount, let us ponder how the light of ancient wisdom can illuminate the shadowy valleys of your online worlds. For blessed are the peacemakers on social media, for they shall be called the children of God.</p>
 
         <p>"Blessed are the pure in heart, for they shall see God" (Matthew 5:8). In a realm where every post, like, and share is a reflection of your heart, strive for purity over popularity. Let your online presence be a mirror that reflects not the vanity of the world but the radiance of the spirit within.</p>

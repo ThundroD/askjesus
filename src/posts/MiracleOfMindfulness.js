@@ -2,16 +2,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const MiracleOfMindfulness = () => {
+  const imagePath = '/post_pics/Mindfulness.png';
   return (
     <>
       <Helmet>
         <title>Miracle of Mindfulness: Christ's Approach to Living in the Moment</title>
         <meta name="description" content="Discover how Jesus Christ's teachings inspire a life of mindfulness, presence, and inner peace." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Miracle of Mindfulness: Christ's Approach to Living in the Moment" />
+        <meta property="og:description" content="Discover how Jesus Christ's teachings inspire a life of mindfulness, presence, and inner peace." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Miracle of Mindfulness: Christ's Approach to Living in the Moment" />
+        <meta property="twitter:description" content="Discover how Jesus Christ's teachings inspire a life of mindfulness, presence, and inner peace." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Miracle of Mindfulness: Christ's Approach to Living in the Moment</h1>
+        <img src={imagePath} alt="Miracle of Mindfulness: Christ's Approach to Living in the Moment" style={{ maxWidth: '100%' }} />
         <p>In the rush of water into wine and the hush of a calming sea, my teachings have long embraced the essence of being fully present. 'Consider the lilies of the field, how they grow; they toil not, neither do they spin' (Matthew 6:28). Just as the lilies dwell in their being, so too should you find the miraculous in each moment.</p>
 
         <p>When I sat at the well with the Samaritan woman, it was not the past transgressions or future worries we discussed, but the living water of the present (John 4:10). In this living water, you will find mindfulness, a conscious presence that transforms ordinary moments into holy ground.</p>

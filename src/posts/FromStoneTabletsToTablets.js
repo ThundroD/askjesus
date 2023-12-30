@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const FromStoneTabletsToTablets = () => {
+  const imagePath = '/post_pics/Tablet.png';
   return (
     <>
       <Helmet>
         <title>From Stone Tablets to Tablets: Preserving Sabbath in the Tech Era</title>
         <meta name="description" content="Explore how the ancient practice of Sabbath can be revitalized to address our modern need for rest and disconnection from the digital world." />
         <meta name="author" content="Author" />
+        <meta property="og:title" content="From Stone Tablets to Tablets: Preserving Sabbath in the Tech Era" />
+        <meta property="og:description" content="Explore how the ancient practice of Sabbath can be revitalized to address our modern need for rest and disconnection from the digital world" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="From Stone Tablets to Tablets: Preserving Sabbath in the Tech Era" />
+        <meta property="twitter:description" content="Explore how the ancient practice of Sabbath can be revitalized to address our modern need for rest and disconnection from the digital world" />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>From Stone Tablets to Tablets: Preserving Sabbath in the Tech Era</h1>
+        <img src={imagePath} alt="From Stone Tablets to Tablets" style={{ maxWidth: '100%' }} />
         <p>In the beginning, even the Creator rested on the seventh day, setting a divine precedent for the importance of rest. The ancient command to observe the Sabbath was not just a law but a gift – a weekly invitation to pause, reflect, and reconnect with what truly matters. Today, as screens and notifications increasingly invade every moment of our lives, the need for such a pause is more pressing than ever.</p>
 
         <p>Let's explore how the timeless wisdom of the Sabbath can be applied in our modern, digital age, helping us to create spaces of quiet, renewal, and resistance against the incessant pull of technology.</p>

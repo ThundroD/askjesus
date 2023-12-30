@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const ModernMiracles = () => {
+  const imagePath = '/post_pics/Modern.png';
   return (
     <>
       <Helmet>
         <title>Modern Miracles: Finding Faith in a Cynical Age</title>
         <meta name="description" content="Explore the existence and recognition of modern miracles, fostering a renewed sense of faith in an era of skepticism." />
         <meta name="author" content="Author" />
+        <meta property="og:title" content="Modern Miracles: Finding Faith in a Cynical Age" />
+        <meta property="og:description" content="Explore the existence and recognition of modern miracles, fostering a renewed sense of faith in an era of skepticism" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Modern Miracles: Finding Faith in a Cynical Age" />
+        <meta property="twitter:description" content="Explore the existence and recognition of modern miracles, fostering a renewed sense of faith in an era of skepticism." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Modern Miracles: Finding Faith in a Cynical Age</h1>
+        <img src={imagePath} alt="Navigating Social Media with Grace" style={{ maxWidth: '100%' }} />
         <p>In a time when cynicism often clouds the collective consciousness, the quest for faith and recognition of miracles becomes profoundly countercultural. Miracles aren't just ancient tales or grandiose events; they're all around us, woven into the fabric of our daily lives. Through this exploration, let's rediscover the wonder and rediscover faith in a world that often dismisses the unexplainable.</p>
 
         <p>As we journey through this topic, consider how redefining miracles and nurturing a mindset of faith can transform not only your perception but also your interaction with the world around you.</p>

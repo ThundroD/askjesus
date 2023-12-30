@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const TheLastSupperSustainableEating = () => {
+  const imagePath = '/post_pics/Supper.png';
   return (
     <>
       <Helmet>
         <title>The Last Supper: A Call for Sustainable Eating Habits</title>
         <meta name="description" content="Discover how the Last Supper's message of mindfulness and sharing can revolutionize our approach to food and sustainability." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Last Supper: A Call for Sustainable Eating Habit" />
+        <meta property="og:description" content="Discover how the Last Supper's message of mindfulness and sharing can revolutionize our approach to food and sustainability" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Last Supper: A Call for Sustainable Eating Habit" />
+        <meta property="twitter:description" content="Discover how the Last Supper's message of mindfulness and sharing can revolutionize our approach to food and sustainability." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Last Supper: A Call for Sustainable Eating Habits</h1>
+        <img src={imagePath} alt="The Last Supper: A Call for Sustainable Eating Habits" style={{ maxWidth: '100%' }} />
         <p>During the Last Supper, I shared bread and wine with my disciples, symbolizing my body and blood given for many. This act wasn't just about the sacrifice; it was about sharing, community, and mindfulness — principles that deeply resonate with today's need for sustainable eating habits. Let's break bread and delve into how these ancient lessons can nourish not just our bodies but our planet as well.</p>
 
         <p>In a world where every meal choice can impact the environment, understanding the deeper significance of what we consume is more important than ever. Reflect on how each item on your plate connects you to a complex web of life and how your eating habits can honor that life.</p>

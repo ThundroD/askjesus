@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const QuietQuittingJesusPerspective = () => {
+  const imagePath = '/post_pics/Quiet.png';
   return (
     <>
       <Helmet>
         <title>Quiet Quitting: The Jesus Perspective on Finding Purpose at Work</title>
         <meta name="description" content="Explore how Jesus' teachings can illuminate our understanding of work, purpose, and engagement in our professional lives." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Quiet Quitting: The Jesus Perspective on Finding Purpose at Work" />
+        <meta property="og:description" content="Explore how Jesus' teachings can illuminate our understanding of work, purpose, and engagement in our professional lives" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Quiet Quitting: The Jesus Perspective on Finding Purpose at Work" />
+        <meta property="twitter:description" content="Explore how Jesus' teachings can illuminate our understanding of work, purpose, and engagement in our professional lives" />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Quiet Quitting: The Jesus Perspective on Finding Purpose at Work</h1>
+        <img src={imagePath} alt="Navigating Social Media with Grace" style={{ maxWidth: '100%' }} />
         <p>In today's world, the phenomenon of 'quiet quitting' — where individuals disengage from their work, doing only the bare minimum — is increasingly prevalent. It's often a response to feeling undervalued, overworked, or lacking purpose. But what would I say about finding purpose at work? Let's explore how my teachings and parables can guide you to a more fulfilling and engaged professional life.</p>
 
         <p>As we navigate this topic, consider how a spiritual approach to work can transform not just your attitude and performance, but also how you perceive the value and purpose of what you do every day.</p>

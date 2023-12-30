@@ -3,16 +3,26 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const DigitalDetoxArticle = () => {
+  const imagePath = '/post_pics/Digital-detox.png';
   return (
     <>
       <Helmet>
         <title>Finding Peace in a World Full of Notifications: Jesus' Take on Digital Detox</title>
         <meta name="description" content="Explore Jesus' humorous yet insightful take on managing digital distractions and finding serenity." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Finding Peace in a World Full of Notifications: Jesus' Take on Digital Detox" />
+        <meta property="og:description" content="Explore Jesus' humorous yet insightful take on managing digital distractions and finding serenity." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Finding Peace in a World Full of Notifications: Jesus' Take on Digital Detox" />
+        <meta property="twitter:description" content="Explore Jesus' humorous yet insightful take on managing digital distractions and finding serenity" />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Finding Peace in a World Full of Notifications: Jesus' Take on Digital Detox</h1>
+        <img src={imagePath} alt="Finding Peace in a World Full of Notifications" style={{ maxWidth: '100%' }} />
         <p>My children, in the beginning was the Word, and the Word was with God, and the Word was God. Today, the 'word' has transformed into endless notifications, buzzing and beeping for your divine attention. As I once retreated into the desert for forty days and forty nights to find clarity and communion with the Father, I invite you to consider your own retreat from the digital world's desert.</p>
         
         <p>Consider the lilies of the field, how they grow; they toil not, neither do they spin. Yet I tell you, even Solomon in all his glory was not arrayed like one of these. If the natural world thrives in such quiet grace, how much more can you, made in the image of God, find peace away from the screen's glare?</p>

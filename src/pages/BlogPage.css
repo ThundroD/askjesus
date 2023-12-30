@@ -2,77 +2,79 @@
 
 /* This will apply to the entire blog page container */
 .blog-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    font-family: Arial, sans-serif;
-    width: 100%; /* Ensures that container takes full width */
-  }
-  
-  /* This targets the blog titles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  width: 100%; /* Ensures that container takes full width */
+}
+
+/* This targets the blog titles */
+h1 {
+  font-size: 3rem; /* Larger size for the main title */
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center; /* Center the title text */
+}
+
+/* Styles for the blog list items */
+.blog-list-item {
+  text-align: center; /* Center the list items */
+  width: 100%; /* Full width */
+  max-width: 800px; /* Larger maximum width of the list */
+  margin: auto; /* Center the list in the container */
+  margin-bottom: 40px; /* More space between items */
+}
+
+/* Styles for the links */
+.blog-link {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s ease;
+  display: block; /* Block display to take up full width */
+}
+
+.blog-link:hover, .blog-link:focus {
+  color: #004499;
+}
+
+/* Styles for the images */
+.blog-image {
+  width: 100%; /* Larger image size */
+  max-width: 800px; /* Constrain the image width */
+  height: auto; /* Keep the aspect ratio of the images */
+  margin-bottom: 20px; /* Space between image and title */
+}
+
+/* Styles for the blog titles (h2) */
+.blog-title {
+  font-size: 2rem; /* Larger font size for titles */
+  color: #333;
+  margin: 0;
+  text-align: center; /* Center the title text */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center; /* Center the title text */
+    font-size: 2.5rem; /* Slightly smaller size for mobile */
   }
-  
-  /* Styles for the list */
-  ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%; /* Full width to center in the parent */
-    max-width: 600px; /* Maximum width of the list */
-    margin: auto; /* Center the list in the container */
+
+  .blog-list-item {
+    max-width: 90%; /* Slightly smaller max-width for mobile */
   }
-  
-  /* Styles for each list item */
-  li {
-    margin: 10px 0;
-    text-align: center; /* Center the list items */
+
+  .blog-title {
+    font-size: 1.5rem; /* Smaller font size for titles on mobile */
   }
-  
-  /* Styles for the links */
-  a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #0077cc;
-    transition: color 0.3s ease;
+
+  /* Reduce padding for smaller screens */
+  .blog-container {
+    padding: 20px;
   }
-  
-  a:hover, a:focus {
-    color: #004499;
-  }
-  
-  /* Footer or privacy link styles */
-  .footer-link {
-    font-size: 1rem;
-    text-align: center; /* Center the footer link */
-    width: 100%; /* Full width to center in the parent */
-    padding-top: 20px; /* Add space above the footer link */
-  }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2rem; /* Smaller size for mobile */
-    }
-  
-    a {
-      font-size: 1rem; /* Smaller font size for mobile */
-    }
-  
-    .footer-link {
-      position: static; /* Disable absolute positioning on mobile */
-      transform: none; /* Remove transform */
-      margin-top: 20px; /* Add margin-top to push it from the last list item */
-    }
-  
-    /* Reduce padding for smaller screens */
-    .blog-container {
-      padding: 20px;
-    }
-  }
+}
+
+
   

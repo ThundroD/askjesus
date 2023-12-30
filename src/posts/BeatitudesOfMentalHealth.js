@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const BeatitudesOfMentalHealth = () => {
+
+  const imagePath = '/post_pics/Beatitudes.png';
+
   return (
     <>
       <Helmet>
         <title>The Beatitudes of Mental Health: Jesus' Insights on Coping with Anxiety and Stress</title>
         <meta name="description" content="Discover how the Beatitudes provide profound insights for understanding and nurturing mental health in today's anxious and stressful world." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Beatitudes of Mental Health: Jesus' Insights on Coping with Anxiety and Stress" />
+        <meta property="og:description" content="Discover how the Beatitudes provide profound insights for understanding and nurturing mental health in today's anxious and stressful world." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Beatitudes of Mental Health: Jesus' Insights on Coping with Anxiety and Stress" />
+        <meta property="twitter:description" content="Discover how the Beatitudes provide profound insights for understanding and nurturing mental health in today's anxious and stressful world." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Beatitudes of Mental Health: Jesus' Insights on Coping with Anxiety and Stress</h1>
+        <img src={imagePath} alt="The Beatitudes of Mental Health: Jesus' Insights on Coping with Anxiety and Stress" style={{ maxWidth: '100%' }} />
         <p>"Blessed are the poor in spirit," I began, offering beatitudes that have comforted and guided millions over centuries. Today, let's explore how these blessings can shed light on modern mental health, offering solace and strategies to those coping with anxiety and stress in a turbulent world.</p>
 
         <p>As we navigate through each beatitude, consider how its spiritual wisdom can nurture your mental well-being, helping you find peace and strength within.</p>

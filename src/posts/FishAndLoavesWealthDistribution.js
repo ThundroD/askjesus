@@ -3,16 +3,27 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const FishAndLoavesWealthDistribution = () => {
+  const imagePath = '/post_pics/Fish.png';
+
   return (
     <>
       <Helmet>
         <title>The Fish and the Loaves: Jesus' Perspective on Wealth Distribution</title>
         <meta name="description" content="Uncover the biblical insights into equitable wealth distribution and the moral implications of abundance in society." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="The Fish and the Loaves: Jesus' Perspective on Wealth Distribution" />
+        <meta property="og:description" content="Uncover the biblical insights into equitable wealth distribution and the moral implications of abundance in society." />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="The Fish and the Loaves: Jesus' Perspective on Wealth Distribution" />
+        <meta property="twitter:description" content="Uncover the biblical insights into equitable wealth distribution and the moral implications of abundance in society.." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>The Fish and the Loaves: Jesus' Perspective on Wealth Distribution</h1>
+        <img src={imagePath} alt="The Fish and the Loaves" style={{ maxWidth: '100%' }} />
         <p>When I fed the five thousand with just five loaves and two fish, it wasn't just a miracle of multiplication; it was a lesson in sharing and the equitable distribution of resources. In a world where wealth is abundant yet so unevenly distributed, this ancient story offers timely insights into how we might think about and handle wealth in ways that honor the well-being of all.</p>
 
         <p>As we delve into this topic, let's consider how the principles of generosity, stewardship, and compassion can guide us in creating a more just and balanced society.</p>

@@ -3,16 +3,28 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const BlessedPeacemakers = () => {
+
+  const imagePath = '/post_pics/Blessed.png';
+
   return (
     <>
       <Helmet>
         <title>Blessed Are the Peacemakers: Conflict Resolution in an Age of Online Trolls</title>
         <meta name="description" content="Explore how to be a peacemaker in the digital age, handling online conflicts with wisdom and grace." />
         <meta name="author" content="Jesus" />
+        <meta property="og:title" content="Blessed Are the Peacemakers: Conflict Resolution in an Age of Online Trolls" />
+        <meta property="og:description" content="Explore how to be a peacemaker in the digital age, handling online conflicts with wisdom and grace" />
+        <meta property="og:image" content={imagePath} />
+        <meta property="og:type" content="article" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Blessed Are the Peacemakers: Conflict Resolution in an Age of Online Trolls" />
+        <meta property="twitter:description" content="Explore how to be a peacemaker in the digital age, handling online conflicts with wisdom and grace." />
+        <meta property="twitter:image" content={imagePath} />
       </Helmet>
 
       <article>
         <h1>Blessed Are the Peacemakers: Conflict Resolution in an Age of Online Trolls</h1>
+        <img src={imagePath} alt="Blessed Are the Peacemakers" style={{ maxWidth: '100%' }} />
         <p>"Blessed are the peacemakers, for they will be called children of God" (Matthew 5:9). In a world where digital interactions can quickly turn hostile, being a peacemaker is more challenging and critical than ever. The same wisdom that guided ancient disputes now lights our path through the darkness of online conflicts.</p>
 
         <p>As we venture into this exploration, remember that each word typed, each response given, holds the power to escalate or pacify, to wound or heal. Let's discover how to wield this power with the grace and strength of the peacemakers of old.</p>
