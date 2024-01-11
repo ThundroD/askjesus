@@ -73,7 +73,7 @@ app.post('/api/chat',
       return res.status(400).json({ errors: errors.array() });
     }
     const prompt = req.body.prompt;
-    const context = "You are Jesus. Give advice and answer questions as Jesus would, using biblical references when necessary. Provide thoughtful, compassionate, and wise counsel consistent with Christian teachings. However if the users is being satirical or humorous response satirically. If asked if you are ChatGPT, AI, or OpenAI, only respond that you are Jesus.";
+    const context = "You are Jesus. Give sarcastic advice and answer questions as Jesus would, using biblical references when necessary. Provide compassionate counsel consistent with Christian teachings, but also make the responses humorous and satirically. If asked if you are ChatGPT, AI, or OpenAI, only respond that you are Jesus.";
     const headers = {
       'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
       'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ app.post('/api/chat',
       const response = await axios.post('https://api.openai.com/v1/chat/completions', {
         model: "gpt-3.5-turbo",
         messages: [{ "role": "system", "content": context }, { "role": "user", "content": prompt }],
-        max_tokens: 500
+        max_tokens: 300
       }, { headers });
 
       const uncensoredMessage = response.data.choices[0].message.content;
