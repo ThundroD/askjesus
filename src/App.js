@@ -36,7 +36,7 @@ function App() {
     window.ezstandalone = window.ezstandalone || {};
     window.ezstandalone.cmd = window.ezstandalone.cmd || [];
     window.ezstandalone.cmd.push(function() {
-      window.ezstandalone.define(188);
+      window.ezstandalone.define(103);
       window.ezstandalone.enable();
       window.ezstandalone.display();
     });
