@@ -102,7 +102,7 @@ const HomePage = () => {
           </button>
         </form>
       </div>
-      <div id="ezoic-pub-ad-placeholder-188"> </div>
+      <div id="ezoic-pub-ad-placeholder-103"> </div>
       {/* Add the links to Terms and Conditions and Privacy Policy */}
       <div className="footer-links" style={{ marginTop: '100px' }}>
         <Link to="/terms-and-conditions">Terms & Conditions</Link> |{' '}
