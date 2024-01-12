@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/Navbar';
@@ -31,18 +30,6 @@ import LovingYourEnemies from './posts/LovingYourEnemies';
 
 
 function App() {
-  useEffect(() => {
-    // Script integration
-    window.ezstandalone = window.ezstandalone || {};
-    window.ezstandalone.cmd = window.ezstandalone.cmd || [];
-    window.ezstandalone.cmd.push(function() {
-      window.ezstandalone.define(103,104,105,106,107,108,109,110,111,112,113,114);
-      window.ezstandalone.enable();
-      window.ezstandalone.display();
-    });
-    // The empty dependency array ensures this effect runs once on mount
-  }, []);
-
   return (
     <Router>
       <NavigationBar />

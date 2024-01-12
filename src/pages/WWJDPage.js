@@ -30,6 +30,21 @@ const WWJDPage = () => {
         fetchConversations();
     }, []);
 
+    useEffect(() => {
+        if (conversations.length > 0) {
+            // Delay ad script initialization by 100ms
+            setTimeout(() => {
+                window.ezstandalone = window.ezstandalone || {};
+                window.ezstandalone.cmd = window.ezstandalone.cmd || [];
+                window.ezstandalone.cmd.push(function() {
+                    window.ezstandalone.define(104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114);
+                    window.ezstandalone.enable();
+                    window.ezstandalone.display();
+                });
+            }, 100);
+        }
+    }, [conversations]);
+
     const renderConversations = () => {
         const elements = [];
         const placeholderStart = 104;
@@ -58,7 +73,18 @@ const WWJDPage = () => {
     return (
         <div className="container wwjd-container">
             <Helmet>
-                {/* ... Helmet content ... */}
+                <title>Explore Past Wisdom - WWJD Conversations Archive</title>
+                <meta name="description" content="Dive into a comprehensive archive of past Q&As where users sought guidance from Jesus. Discover the wisdom shared on a variety of topics, reflecting Christian teachings and biblical insights." />
+                <meta name="keywords" content="Jesus, WWJD, Christianity, Bible, Faith, Archive, Spiritual guidance, Christian advice" />
+                <meta property="og:title" content="Explore Past Wisdom - WWJD Conversations Archive" />
+                <meta property="og:description" content="Browse through an extensive collection of questions and answers reflecting the wisdom of Jesus. Engage with the community's spiritual inquiries and the guidance provided." />
+                <meta property="og:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" />
+                <meta property="og:url" content="https://lustrous-bunny-ec58cf.netlify.app/wwjd" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Explore Past Wisdom - WWJD Conversations Archive" />
+                <meta name="twitter:description" content="Join a journey of spiritual discovery through past conversations with Jesus. Find answers and insights from a Christian perspective." />
+                <meta name="twitter:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" />
             </Helmet>
             <h1 className="text-center">What Would Jesus Do - Conversation History</h1>
             {isLoading && <p className="loading-text">Loading...</p>}

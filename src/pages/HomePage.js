@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HomePage.css';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const HomePage = () => {
@@ -8,6 +8,17 @@ const HomePage = () => {
   const [outputValue, setOutputValue] = useState('Your answer will appear here...');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Script integration for ads
+    window.ezstandalone = window.ezstandalone || {};
+    window.ezstandalone.cmd = window.ezstandalone.cmd || [];
+    window.ezstandalone.cmd.push(function() {
+      window.ezstandalone.define(103);
+      window.ezstandalone.enable();
+      window.ezstandalone.display();
+    });
+  }, []);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -33,7 +44,6 @@ const HomePage = () => {
     setError(null);
 
     try {
-      // Use the environment variable REACT_APP_API_URL
       const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/chat`, {
         method: 'POST',
@@ -63,17 +73,15 @@ const HomePage = () => {
         <title>What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom</title>
         <meta name="description" content="Discover personalized, biblical wisdom with the 'What Would Jesus Do?' app. Ask any question and receive insights drawn directly from the teachings of Jesus and Christian principles. Begin your spiritual journey today and find guidance for life's challenges." />
         <meta name="keywords" content="Jesus, Christian advice, Spiritual guidance, Biblical wisdom, Faith questions, Christian living, Scripture insights, Ask Jesus, Christian faith, Religious guidance" />
-        {/* Open Graph Tags */}
         <meta property="og:title" content="What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom" />
         <meta property="og:description" content="Seeking answers? Ask any question and receive guidance inspired by the teachings of Jesus. Explore biblical wisdom and strengthen your faith journey." />
-        <meta property="og:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" /> {/* Replace with the URL to an image representing your app */}
-        <meta property="og:url" content="https://lustrous-bunny-ec58cf.netlify.app/" /> {/* Replace with your app's URL */}
+        <meta property="og:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" />
+        <meta property="og:url" content="https://lustrous-bunny-ec58cf.netlify.app/" />
         <meta property="og:type" content="website" />
-        {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="What Would Jesus Do? - Biblical Guidance & Spiritual Wisdom" />
         <meta name="twitter:description" content="Dive into the teachings of Jesus and find answers and guidance for your life's questions. Explore now." />
-        <meta name="twitter:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" /> {/* Replace with the URL to an image representing your app */}
+        <meta name="twitter:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" />
         <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
       </Helmet>
       <h1 className="heading">What would Jesus Do?</h1>
@@ -88,7 +96,7 @@ const HomePage = () => {
       <div className="input-section">
         <h1 className="input-prompt">Ask Jesus Anything</h1>
         <form onSubmit={handleSubmit}>
-          <input 
+          <input
             type="text" 
             value={inputValue} 
             onChange={handleInputChange} 
@@ -103,16 +111,16 @@ const HomePage = () => {
         </form>
       </div>
       <div id="ezoic-pub-ad-placeholder-103"> </div>
-      {/* Add the links to Terms and Conditions and Privacy Policy */}
       <div className="footer-links" style={{ marginTop: '100px' }}>
         <Link to="/terms-and-conditions">Terms & Conditions</Link> |{' '}
-        <Link to="/privacy-policy">Privacy Policy</Link> {/* Use Link to navigate to pages */}
+        <Link to="/privacy-policy">Privacy Policy</Link>
       </div>
     </div>
   );
 };
 
 export default HomePage;
+
 
 
 
