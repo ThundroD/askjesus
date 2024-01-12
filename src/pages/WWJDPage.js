@@ -41,7 +41,7 @@ const WWJDPage = () => {
                     window.ezstandalone.enable();
                     window.ezstandalone.display();
                 });
-            }, 100);
+            }, 200);
         }
     }, [conversations]);
 
