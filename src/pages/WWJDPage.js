@@ -38,8 +38,11 @@ const WWJDPage = () => {
                 window.ezstandalone.cmd = window.ezstandalone.cmd || [];
                 window.ezstandalone.cmd.push(function() {
                     window.ezstandalone.define(104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114);
+                    console.log("placeholders defined");
                     window.ezstandalone.enable();
+                    console.log("placeholders enabled");
                     window.ezstandalone.display();
+                    console.log("placeholders displayed");
                 });
             }, 200);
         }
@@ -64,6 +67,7 @@ const WWJDPage = () => {
                 elements.push(
                     <div key={`ad-${placeholderIndex}`} id={`ezoic-pub-ad-placeholder-${placeholderIndex}`}></div>
                 );
+                console.log('placeholder' + placeholderIndex);
             }
         });
 
