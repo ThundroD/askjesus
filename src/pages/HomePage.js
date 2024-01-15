@@ -111,7 +111,6 @@ const HomePage = () => {
         </form>
       </div>
       <div id="ezoic-pub-ad-placeholder-103"> </div>
-      <div id="humix-vid-nZuOoBtIWJf" style="width:560px;height:315px;" props="autoplay=1&s=p" float><script async="" src="https://www.humix.com/video.js"></script></div>
       <div className="footer-links" style={{ marginTop: '100px' }}>
         <Link to="/terms-and-conditions">Terms & Conditions</Link> |{' '}
         <Link to="/privacy-policy">Privacy Policy</Link>
