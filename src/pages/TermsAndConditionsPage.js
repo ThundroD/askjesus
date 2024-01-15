@@ -38,7 +38,7 @@ const TermsAndConditionsPage = () => {
 
       <h2>6. Contact Us</h2>
       <p>
-        If you have any questions or concerns about these Terms and Conditions, please contact us at pizzaslushmail@gmail.com.
+        If you have any questions or concerns about these Terms and Conditions, please contact us at askmeanythingjesus@proton.me.
       </p>
     </div>
   );

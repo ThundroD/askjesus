@@ -68,11 +68,11 @@ function PrivacyPolicyPage() {
       <h2>6. Contact Us</h2>
 
       <p>
-        If you have any questions or concerns about our Privacy Policy or data practices, please contact us at pizzaslushmail@gmail.com.
+        If you have any questions or concerns about our Privacy Policy or data practices, please contact us at askmeanythingjesus@proton.me.
       </p>
 
       <p>
-        This Privacy Policy was last updated on December 21, 2023. We may update this policy to reflect changes to our information practices. Please review this page periodically.
+        This Privacy Policy was last updated on December 25, 2023. We may update this policy to reflect changes to our information practices. Please review this page periodically.
       </p>
     </div>
   );
