@@ -62,11 +62,11 @@ const HomePage = () => {
       // Refresh ads after setting the new output value
       window.ezstandalone.cmd.push(function() {
         // Destroy the existing placeholder
-        ezstandalone.destroyPlaceholders(103);
+        window.ezstandalone.destroyPlaceholders(103);
         // Redefine, enable, and display the placeholder
-        ezstandalone.define(103);
-        ezstandalone.enable();
-        ezstandalone.display();
+        window.ezstandalone.define(103);
+        window.ezstandalone.enable();
+        window.ezstandalone.display();
       });
   
     } catch (error) {
