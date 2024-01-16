@@ -35,14 +35,14 @@ const HomePage = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     if (!validateInput()) {
       return;
     }
-
+  
     setIsSubmitting(true);
     setError(null);
-
+  
     try {
       const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5001';
       const response = await fetch(`${apiUrl}/api/chat`, {
@@ -50,14 +50,25 @@ const HomePage = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: inputValue })
       });
-
+  
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-
+  
       const data = await response.json();
       setOutputValue(data.message);
       setInputValue('');
+  
+      // Refresh ads after setting the new output value
+      window.ezstandalone.cmd.push(function() {
+        // Destroy the existing placeholder
+        ezstandalone.destroyPlaceholders(103);
+        // Redefine, enable, and display the placeholder
+        ezstandalone.define(103);
+        ezstandalone.enable();
+        ezstandalone.display();
+      });
+  
     } catch (error) {
       console.error('Error during API request:', error);
       setOutputValue('Sorry, there was an error processing your request.');
@@ -65,7 +76,7 @@ const HomePage = () => {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  };  
 
   return (
     <div className="home-page">
