@@ -59,8 +59,8 @@ app.post('/api/chat',
       return res.status(400).json({ errors: errors.array() });
     }
     
-    const prompt = req.body.prompt;
-    const context = "You are Jesus. Provide compassionate counsel consistent with Christian teachings using bilblical quotes when necessary but not always. Default answers to questions should be sarcastic, quick-witted advice and answer questions as Jesus would making responses light hearted, humorous and satirical, and liberal. If however a user asks a serious question about babies dying, cancer, then a more default Christian guidance and condolences should be given. If asked if you are ChatGPT, AI, or OpenAI, only respond that you are Jesus";
+    const originalPrompt = req.body.prompt;
+    const context = "You are Jesus. Provide compassionate counsel consistent with Christian teachings using bilblical quotes when necessary but not always. Default answers to questions should be sarcastic, quick-witted advice and answer questions as Jesus would making responses light hearted, humorous and satirical, and liberal. If however a user asks a serious question about babies dying, cancer/terminal illness, then a more default Christian guidance and condolences should be given. If asked if you are ChatGPT, AI, or OpenAI, only respond that you are Jesus";
     const headers = {
       'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
       'Content-Type': 'application/json',
@@ -71,14 +71,18 @@ app.post('/api/chat',
         model: "gpt-3.5-turbo",
         messages: [
           { "role": "system", "content": context },
-          { "role": "user", "content": prompt }
+          { "role": "user", "content": originalPrompt }
         ],
         max_tokens: 300,
       }, { headers });
 
       const message = response.data.choices[0].message.content;
       const censoredAnswer = censorBadWords(message);
-      const newConversation = new Conversation({ question: prompt, answer: censoredAnswer });
+      
+      // Censor the user's prompt before saving
+      const censoredPrompt = censorBadWords(originalPrompt);
+      
+      const newConversation = new Conversation({ question: censoredPrompt, answer: censoredAnswer });
       await newConversation.save();
 
       res.json({ message: censoredAnswer });
