@@ -37,7 +37,7 @@ const WWJDPage = () => {
                 window.ezstandalone = window.ezstandalone || {};
                 window.ezstandalone.cmd = window.ezstandalone.cmd || [];
                 window.ezstandalone.cmd.push(function() {
-                    window.ezstandalone.define(104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114);
+                    window.ezstandalone.define(104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135);
                     console.log("placeholders defined");
                     window.ezstandalone.enable();
                     console.log("placeholders enabled");
@@ -51,7 +51,7 @@ const WWJDPage = () => {
     const renderConversations = () => {
         const elements = [];
         const placeholderStart = 104;
-        const placeholderEnd = 114;
+        const placeholderEnd = 135;
         const placeholderRange = placeholderEnd - placeholderStart + 1;
 
         conversations.forEach((conv, index) => {
@@ -90,6 +90,7 @@ const WWJDPage = () => {
                 <meta name="twitter:description" content="Join a journey of spiritual discovery through past conversations with Jesus. Find answers and insights from a Christian perspective." />
                 <meta name="twitter:image" content="https://lustrous-bunny-ec58cf.netlify.app/pics/jesushome.png" />
             </Helmet>
+            <div id="ezoic-pub-ad-placeholder-136"> </div>
             <h1 className="text-center">What Would Jesus Do - Conversation History</h1>
             {isLoading && <p className="loading-text">Loading...</p>}
             {error && <p className="text-danger error-text">{error}</p>}
